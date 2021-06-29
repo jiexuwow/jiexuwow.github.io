@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/06/29/zynq/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/Tda4/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/29/Mongodb/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/29/ArchLinux/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/Yocto/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/ROS2/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/17/GitUsage/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/Conda/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/06/29/hello-world/</loc>
     
     <lastmod>2021-06-29</lastmod>
@@ -51,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/05/18/Yocto/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/06/29/OpenEmbedded/</loc>
     
     <lastmod>2021-06-29</lastmod>
@@ -72,20 +121,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/05/18/ROS2/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/05/18/Tda4/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/05/18/CMake/</loc>
     
     <lastmod>2021-06-29</lastmod>
@@ -93,16 +128,9 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/05/18/Conda/</loc>
+    <loc>http://example.com/2021/06/29/readthedocs/</loc>
     
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/05/17/GitUsage/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
+    <lastmod>2021-06-26</lastmod>
     
   </url>
   
