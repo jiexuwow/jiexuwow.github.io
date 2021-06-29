@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>GitUsage | Xu Jie</title>
+  <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitUsage">
+<meta property="og:url" content="http://example.com/2021/05/17/GitUsage/index.html">
+<meta property="og:site_name" content="No One">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-17T09:27:11.000Z">
+<meta property="article:modified_time" content="2021-06-29T09:37:07.645Z">
+<meta property="article:author" content="xujie">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://example.com/2021/05/17/GitUsage/index.html">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+  
+  
+  
+  
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="No One" type="application/atom+xml">
+</head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/jiexuwow" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">No One</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Valar Morghulis</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/jiexuwow" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HEXO/">HEXO</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Make/">Make</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROS2/">ROS2</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tda4/">Tda4</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPN/">VPN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux-GPIO/" rel="tag">-Linux -GPIO</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-ACM/" rel="tag">C ACM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-Make/" rel="tag">C Make</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ROS2-Yocto/" rel="tag">ROS2 Yocto</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tda4-Yocto/" rel="tag">Tda4 Yocto</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPN-v2ray/" rel="tag">VPN v2ray</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yocto/" rel="tag">Yocto</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python-Conda/" rel="tag">python Conda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">计算机组成原理 学习笔记</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Linux-GPIO/" style="font-size: 13px;">-Linux -GPIO</a> <a href="/tags/C-ACM/" style="font-size: 13px;">C ACM</a> <a href="/tags/C-Make/" style="font-size: 13px;">C Make</a> <a href="/tags/Git/" style="font-size: 13px;">Git</a> <a href="/tags/Linux/" style="font-size: 13px;">Linux</a> <a href="/tags/ROS2-Yocto/" style="font-size: 13px;">ROS2 Yocto</a> <a href="/tags/Tda4-Yocto/" style="font-size: 13px;">Tda4 Yocto</a> <a href="/tags/VPN-v2ray/" style="font-size: 13px;">VPN v2ray</a> <a href="/tags/Yocto/" style="font-size: 13px;">Yocto</a> <a href="/tags/hexo/" style="font-size: 13px;">hexo</a> <a href="/tags/python-Conda/" style="font-size: 13px;">python Conda</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 13px;">计算机组成原理 学习笔记</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a><span class="archive-list-count">11</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/06/29/hello-world/" class="title">Hello World</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-06-29T09:37:07.668Z" itemprop="datePublished">2021-06-29</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/06/29/OpenEmbedded/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-06-29T09:37:07.648Z" itemprop="datePublished">2021-06-29</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Linux/">Linux</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/23/Linux%E4%BD%BF%E7%94%A8GPIO/" class="title">Linux使用GPIO</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-23T15:42:58.000Z" itemprop="datePublished">2021-05-23</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%861/" class="title">计算机组成原理1</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-20T08:49:15.000Z" itemprop="datePublished">2021-05-20</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/VPN/">VPN</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/20/Vpn/" class="title">Vpn</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-20T06:16:03.000Z" itemprop="datePublished">2021-05-20</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-GitUsage" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      GitUsage
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2021/05/17/GitUsage/" class="article-date">
+	  <time datetime="2021-05-17T09:27:11.000Z" itemprop="datePublished">2021-05-17</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/Git/" rel="tag">Git</a>, <a class="article-tag-link-link" href="/tags/Linux/" rel="tag">Linux</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/17/GitUsage/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="140ab9e438ce6f3e7f526b182d42c84dbccc5051642ce1d0f69c95027e24bff2">1d4ac95fef64c37dd9f5b3734f87ed3f4415c95b1b927d68ebf2e4f6a8b97c6ecb3e4c7ed001b622ca727a63ddba77f461e9ba8786db28aa518870b9451929c9ee3a6e7532316f35dcdb5504287dfd426e43bded2c681ece0eb1a2bd054f4ab4e498d353b061ffa0f83916cd7fdaba8cb5c28b2750415e3d0238e5f514672e55e58b4caf04ad97fb59d5da6d888bfd73a35f111938aa3270f5af7604e6781aa6354abc3e5617049cebd8c3c56c8509338f34022bbd101fb278ed05bf5631d46260ab0aa52216413d39a638715815f72540ad996dafd450d3986b8210d3ba1017d63cfad788d034fe32db8634f4f99acbf985d3b25dd226f6b6e7e22152770512c3981728c350f6bbf00a4bcc03a6aeaa3ffb29bff2ddba0799f460dd1f9c17b194048c972a14256c23da216273bf8a8409177e21deb8d2e5ed469a83c2c1993616dbd2fb8e6eec6f0c0c95043bb2c575ea8a175bddc5c6a702e84397d9c0a268db85c5206775d303229cb7f75d2570692d6a3730d1946f4e137df2013fc04e28604ef2ba3ac8de887c82b72f34b1488cdece6ede40d64ad6b6e2919489caf08ab8c32bffa3c5b92e7477f7246fbd3a98fe2f8f6bc2bac447e63e8f784ae447639695ab669937e528e25099b4908030c971686733fb8335871e077d8c09bd1c152e06c5db5fde4b03d9f3bfda2237d4f79654bf420e1896e88d0bddbcbdbeac853c5275a1119445696c0e7dbf0577ff529b412fa3ea50caf883b8fcf5ad9e2d4cef7370f9d02a398b693bb1253a393f485df84ab55be7d1fd9f7d621c6897a30a722d5c1fc2e776bc1d9c29a05c48353ee7fdc3f8a943a39d205084c0635773a1925e38bb6e719ff9fafc25aba1ffc073d094c1c59e097b0be03383bcd030b085721f277f2a3de2a8dcc17912dd2014268e526c2bbb36ce73729eaf9beed421dd250bdaf69136302b54e776eefe0b9c36b6d6fa8a79702efab619f0c74bde148a85056ad0e61daddbf12171998472c59eac45f455b8a178cf8c5f878293381df05de945362ea927bfc971c78ac5c1a569ff8919380356b300825be0c9f2deb143391137814d1c620cf31d9e447347a6708fabe90c6af1ed416de8f3f51917030e379a8a49803c79eb7a617e708a251a2148f116462117df8d06a063f8dba7922d082fb8a4d31cf62a288f8abbcaceccb1c7732f1f5f21f151dc8a937279e9e1fca258a27cd471001656811623b2ff14cf95f9c999eddeac5a95465a8f869821d32f6ae0e339f53b6ab1829ae7e110e898f20fe97bff0ada26eeca20da0bec97a8284bbdfcab300ea2ed0e4a515e130bd0d6b7655e5605744ca664cf7e59f9538f260e893a53cfe0fa57089e19cb885b5087618451b5b72ed7ada47c9a7f694f0b276ee8448d3a47f444d3be8bf7cffd1da27a06ed4c662dc9f6dffeb3bc2b66db9d6642d484818375d08f61e69d7b4ac23f781e64e319471666b08d13226d2e9afc26beaaffff16a2b702e51dc0d52413fa9227cc70f7a08f29165f9a737c62f18d4cfc12ac32e20ffc2148f9ff7c75ba1e6ed44d2c0e363c90b7299a05cd1c18303a1c806dfca7ae38f56977bee06bbf32120c595f1356129509056362c0dcdc141985091987d9c2bdc4168b07d62e9d76aef5e76068c7237ce26592063936e6f2635e633330139aa991d68380932e108156a4faf480fcb5955733c3e5d0af12184eb39ffe5a1a1f455cdd920c1d2613583020ce34863d595b9304916ac7b6cb71f864bafe76de07902c6e6d7b1ae7647c1550d056bd713c9f0c12aee2aca9f3c2d91d837ee53dfa717340f15b4abd4e6953634e37f310a37d957edf8d1d585d3ee4a6b2b036bc1e2e4cd669a34135f26288332f1b75f833a0bcbc85911a6a07482dcd661309f4e4fc5d012f3291d64622173758b2386851436934eda6827fd53d4153d9adab5417559e5ca8bc7ea6b0dc9d4edd311c6835ef5c0cb94e6af2ee1bdd34c7c1892d79dcbd133fda16a3965230c667e06bca8404b710c88ed79fe02fcb31f1e21d739a9eb14fb4992a88b92be0858a2eb49fca26b95b126671e0be3643d93cceb45608f00589d66a860030ac4fe83bc17bc0dab528b36ece6223e7ecfe90b594c8f7d6b1b83ed186e071de7cc1cd36471fd6e98494a1929dd2d04e9b2bb9a14b09dbee73254b71e9df401304f6cd34ac7c257c58b341e40435c18ebaa9d055fa10795eac5e68ee1da3d1f963a827677c808464b0fb8f0cf37ef9c1c17a1a8071409666cbdc5cde59a7e51d810cc0e2138e84d7f024520853ff63100c31d2c6aa5275403fe0b029c2aab4c94dc8d4883135bca68ad73bca8efa263d3e86912544537458cc525d2af8fcfe240870a72ad5f2f70f3119c912128ce5cbaf51466ad5db41ee74900de1501fe1c4d818e75323febd7e9a96a6536ec705cf7a44691b0230e17584eb308512729f846ca231b8f1f883f5796520d6ee6ee41ffa448ea68091526d62b77ad2014c1d41b4ac3871d7c0942c24f1757e2dbaea8a90710c5f7b20e1d621b27a3a34eaedcba0bec57d02a4812beb883bd32e1bbcacb8e6982a53331d790862e1c28bca0cfc6636664bf6f3cc62ee60b82218d59da3291836bb9ba63ea25322dad347b4d9ba58b2e88ce204337343500e6880ead37479dd21987ac4ad0897e67553c6adb6e112495fac1959c6001d4d39259c5be842d5e9b893030b73b2b31338907a7198a582bf9490849810d48b82f55b22eba251dd425f34d83625042dff3be3afa62e5591960fd959118389221eee0a8627696fcd00d9d9b603009c3420b08ec99839f0995f07ecb746867d3f7fa797b830ea301ecda9b1fda7204acc7556bbfcc7a134877f6652f8687b3b2dc8641f2081c754c5837cc9932599ae07ca6f258404728d77dbf1ffc38688cf59234cb3f5d140e20db365ffee63a87c645fe1045443a77e8f126d8a126566a02d9e8444dec2fc2becb9ad0b9709fd625de9deaa1be9976d48310b94594d3ba5b56badfcbcd7a46a64cea661729fd9c8b76250dae8cf09dc2f7f73f29e4d5abb62c640afc65cc6a82c60b3ed06ac619395aa29f0c5f1a544287b88af672a1742df24e580fa2c01c15e488f3a3cd8103fb2f4ca2e68ff288edd89fd2c82b827d0b54d5e4b827231c5b20b058450724cc0653e0e6c951a791b434fd29453276a82954ef094df1ed7cdd407ae4865f4b9c94f7860c2e4b382872b711f7e07ce79d899d9201dbb87626fba5d40f08d0f6f4c4a65975058251324aaacbaff8a3b74428665b812dcdff83a0933bb931d1c3a3f2e10470dc0cfe82df634be3311bcd75400551f783640c486d911c5c235194b7ef52a19b1426925988e9050a7001fd638af0f12c2b6db53f31d222af6a56c3ab7f5b31e2ac22f10417c53e8ab814922296aa4a8a77b8abbb780f916b1096e7b1f6036554145a10c71ae9086376f9514bbc6eb8fe7ac23e1ee70c76e833187d38431c735ef8d50038b48741e6a5517ba3b2f0f7500a98cdba814719e98821a0f4a6183c0d775de007173c04ea1cd46360d8a2996ab3db3d34ecb1031647cf99c110bafd308da730451db4defad1e6206b3497be317e491a6fefe49cf23c6ab6d3df01496a911d75568f73fcbf09061c4da56d1c80f061a71850f9682ca01b06af5245411f71198c9a98100f8fe2992cdd75b6f690679c415a70958bdfc2a8039b4de1709fd6ccf8e16cdca52f661b908f98fec175ae404e4ae1181e389d703e777c2556d242d2f5b4b82b57b00a3521b79f5ea09ec64849b508c9f9fc15d84c9868a9f8655decf13973881dafb282f756d8fe2e8d77644c22068a938476fa77211cca590c01c099bdb3d85616d8909397431e75dd4b9a99661707e7943e800b35704d3cd08a4b3dd0e630811661898edad5193356bdd6810304d3696a6875cb56981a107e04ee8d416f47ebeb8d57ca2790e3a1b8584005b2e5241c91e697fbd2da1ecee58e8ed4b7f2c90d306d3a5a0c877709bd7eaf4374194b5fddb6a994de97c5aa063151faebe00bf8eb19d04bdda68a38d86fdc0149c244183f6e24d76f174c3069dea954b4faed6da721bdb5afe826701380a32d1f3bdf2bbccd722eafe9bdeef832caa45cfd3a08c8d23a526f0a552008f4b1f8eca4691cbdcf8101483e0579fe9355cb697db99bc47566ee46bd1c2997fd54ae8714e0ac11358267afe41ee2dd5fa27a80787ee39bb172231c2f7b3868e905e756262480a377ad47b0b6c47960e4d5acf22116e989d3d77b5cf5d37ef937d18249449dbfb2f93d642b7682e8f5e36d928d5c16a239ee969cd9f9bba87f450ed0b7ee6746faef324e5121a481ac391012c80c6c6229d2993a007b3609137186b8484855d020239bc0bb0b79ae305e1b04afdd32e4a8c7b0e4a358c614ab15f0191de4db64081b50b5b981e6ad85ab887781b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+      
+    </div>
+    <div class="article-footer">
+      <!-- <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2021/05/17/GitUsage/" title="GitUsage" target="_blank" rel="external">http://example.com/2021/05/17/GitUsage/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote> -->
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/jiexuwow" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/jiexuwow" target="_blank"><span class="text-dark">No One</span><small class="ml-1x">Valar Morghulis</small></a></h3>
+        <div>个人简介。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2021/05/18/Tda4/" title="Tda4"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2021/05/14/%E4%BD%BF%E7%94%A8Github%E5%8A%A0HEXO%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="使用Github加HEXO创建博客"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/jiexuwow" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+</body>
+</html>
