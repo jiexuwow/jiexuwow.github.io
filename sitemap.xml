@@ -2,7 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2021/06/29/zynq/</loc>
+    <loc>http://example.com/2021/05/18/zynq/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/ROS2/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/17/readthedocs/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/17/Mongodb/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/20/ArchLinux/</loc>
     
     <lastmod>2021-06-29</lastmod>
     
@@ -16,28 +44,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/06/29/Mongodb/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/06/29/ArchLinux/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/05/18/Yocto/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/05/18/ROS2/</loc>
     
     <lastmod>2021-06-29</lastmod>
     
@@ -107,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/06/29/OpenEmbedded/</loc>
-    
-    <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/05/23/Linux%E4%BD%BF%E7%94%A8GPIO/</loc>
     
     <lastmod>2021-06-29</lastmod>
@@ -124,13 +124,6 @@
     <loc>http://example.com/2021/05/18/CMake/</loc>
     
     <lastmod>2021-06-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/06/29/readthedocs/</loc>
-    
-    <lastmod>2021-06-26</lastmod>
     
   </url>
   
@@ -179,6 +172,20 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/Mongodb/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/ROS2-Yocto/</loc>
     <lastmod>2021-06-29</lastmod>
     <changefreq>daily</changefreq>
@@ -193,7 +200,35 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/ArchLinux/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/Yocto/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/readthedocs/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E7%BD%91%E9%A1%B5/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Zynq/</loc>
     <lastmod>2021-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -266,6 +301,13 @@
   
   <url>
     <loc>http://example.com/categories/VPN/</loc>
+    <lastmod>2021-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/linux/</loc>
     <lastmod>2021-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
